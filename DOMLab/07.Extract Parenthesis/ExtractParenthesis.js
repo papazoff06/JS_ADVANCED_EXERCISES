@@ -7,6 +7,4 @@ function extract(content) {
         result += `${row[0]+';' + ' '}`
     }
     return document.getElementById('content').textContent = result;
-    
-    
 }
