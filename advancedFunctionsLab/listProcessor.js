@@ -1,32 +1,18 @@
 function solve(arr){
     let result = [];
+    let obj = {
+        add: (str) => result.push(str),
+        remove: (str) => result = result.filter((el) => (el !== str)),
+        print: ()=> console.log(result.join(','))
+    }
 
     for(let row of arr){
-        if(row === 'print')
-        break;
-
-        else{
-            
-             function changeRasult(){
-            let [command, str] = row.splt(' ');
-            if(command === 'add'){
-                result.push(str)
-            }
-            }
-        }
-       
+        let [command, data] = row.split(' ');
+        obj[command](data)
     }
-    
 
  }
         
-    
-
-
 solve(
     ['add hello', 'add again', 'remove hello', 'add again', 'print']
 )
-
-// add: (str) => result.push(str),
-            // remove: (str) => result.forEach((el) => el.remove(str)),
-            // print: () => console.log(result.join(','))
