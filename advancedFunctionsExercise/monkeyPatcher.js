@@ -6,7 +6,10 @@ function solution(data){
         this.downvotes --;
     }
     console.log(this.upvotes, this.downvotes);
+
+    
 }
+
 
 let post = {
     id: '3',
