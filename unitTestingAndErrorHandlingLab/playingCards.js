@@ -1,4 +1,4 @@
-function card(f, s){
+function createCard(f, s){
     let validFaces = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K','A'];
 
     
@@ -22,8 +22,8 @@ function card(f, s){
         }
     };
 }
-console.log(card('A', 'S').toString());  // A♠
-console.log(card('10', 'H').toString()); // 10♥
-console.log(card('1', 'C').toString());  // Throws Error
-card('A', 'S');
-card('1', 'C');
+// console.log(createCard('A', 'S').toString());  // A♠
+// console.log(createCard('10', 'H').toString()); // 10♥
+// console.log(createCard('1', 'C').toString());  // Throws Error
+// createCard('A', 'S');
+// createCard('1', 'C');
